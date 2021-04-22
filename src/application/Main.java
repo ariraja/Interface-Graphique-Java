@@ -35,7 +35,8 @@ public class Main extends Application {
         //scene.getStylesheets().add(css);
 
         // Icon
-       // String icon = this.getClass().getResource("icon.png").toExternalForm();
+        //String icon = this.getClass().getResource("icon.png").toExternalForm();
+        //System.out.println(icon);
         //stage.getIcons().add(new Image(icon));
 
         stage.setScene(scene);
