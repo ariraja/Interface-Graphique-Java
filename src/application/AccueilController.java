@@ -19,9 +19,6 @@ public class AccueilController {
     @FXML
     private Button btnAccueilQuitter;
 
-    @FXML
-    private AnchorPane scenePan;
-
     Stage stage;
 
     public void quitterAppli(ActionEvent event) {
@@ -30,7 +27,7 @@ public class AccueilController {
         alert.setTitle("Quitter");
         alert.setHeaderText("Etes vous sûre de vouloir quitter ?");
         if(alert.showAndWait().get() == ButtonType.OK) {
-            stage = (Stage) scenePan.getScene().getWindow();
+            stage = (Stage) btnAccueilQuitter.getScene().getWindow();
             System.out.println("Aurevoir !");
             stage.close();
         }

@@ -38,7 +38,7 @@ public class Main extends Application {
        // String icon = this.getClass().getResource("icon.png").toExternalForm();
         //stage.getIcons().add(new Image(icon));
 
-
+        stage.setScene(scene);
         stage.show();
 
 
