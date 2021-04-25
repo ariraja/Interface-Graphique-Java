@@ -39,8 +39,8 @@ public class AccueilController {
     }
 
     @FXML
-    public void goToLeBar(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("LeBar.fxml"));
+    public void goToMenuClient(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("MenuClient.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

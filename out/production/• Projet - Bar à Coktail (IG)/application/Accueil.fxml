@@ -25,7 +25,7 @@
       </MenuBar>
       <HBox alignment="CENTER" layoutX="136.0" layoutY="242.0" prefHeight="100.0" prefWidth="328.0" spacing="25.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="136.0">
          <children>
-            <Button fx:id="btnAccueilEntrerBar" mnemonicParsing="false" onAction="#goToLeBar" text="Entrer dans le bar" />
+            <Button fx:id="btnAccueilEntrerBar" mnemonicParsing="false" onAction="#goToMenuClient" text="Entrer dans le bar" />
             <Button fx:id="btnAccueilGestionBar" mnemonicParsing="false" onAction="#goToGestionBar" text="Gestion du bar" />
             <Button fx:id="btnAccueilQuitter" mnemonicParsing="false" onAction="#quitterAppli" text="Quitter" />
          </children>
