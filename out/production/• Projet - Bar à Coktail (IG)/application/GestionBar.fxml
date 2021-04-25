@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="application.GestionBarController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionBarController">
 
     <children>
         <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-radius: 1em;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -27,6 +25,9 @@
             </menus>
         </MenuBar>
         <Label layoutX="241.0" layoutY="62.0" text="Gestion Bar" />
+      <Button fx:id="btnretour" layoutX="261.0" layoutY="302.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
+      <Button layoutX="261.0" layoutY="206.0" mnemonicParsing="false" onAction="#goToGestionBarCocktail" text="Gérer Cocktail" />
+      <Button fx:id="btnboisson" layoutX="253.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToGestionBarBoisson" text="Gérer Boissons" />
 
     </children>
 

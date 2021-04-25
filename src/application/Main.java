@@ -28,7 +28,6 @@ public class Main extends Application {
         stage.setOnCloseRequest(event ->{
             event.consume();
             quitterAppli(stage);
-
         });
         // CSS
        // String css = this.getClass().getResource("css/style.css").toExternalForm();
@@ -41,8 +40,6 @@ public class Main extends Application {
 
         stage.setScene(scene);
         stage.show();
-
-
     }
 
     private void quitterAppli(Stage stage) {
