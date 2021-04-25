@@ -69,11 +69,11 @@ public class GestionBarBoisson implements Initializable {
     @FXML
     void ajout(ActionEvent event) {
 
-        boolean b1= emptyTextField (tfnom, lberrornom, " attention champ vide");
-        boolean b2= emptyTextField (tfprix, lberrorprix, " attention champ vide");
-        boolean b3= emptyTextField (tfquantite, lberrorquantite, " attention champ vide");
-        boolean b4= notNumberTextField (tfprix, lberrorprix, " Not a number !");
-        boolean b5= notNumberTextField  (tfquantite, lberrorquantite, " Not a number !");
+        boolean b1= emptyTextField (tfnom, lberrornom, "Champ vide !");
+        boolean b2= emptyTextField (tfprix, lberrorprix, "Champ vide !");
+        boolean b3= emptyTextField (tfquantite, lberrorquantite, "Champ vide !");
+        boolean b4= notNumberTextField (tfprix, lberrorprix, "Rentrez un nombre !");
+        boolean b5= notNumberTextField  (tfquantite, lberrorquantite, "Rentrez un nombre !");
         if(!b1&&!b2&&!b3&&!b4&&!b5)
         {
             Boisson p= new Boisson (tfnom.getText(), Double.parseDouble(tfprix.getText()), Integer.parseInt(tfquantite.getText()));
@@ -103,7 +103,7 @@ public class GestionBarBoisson implements Initializable {
         if(tableview.getSelectionModel().getSelectedItem()==null)
         {
             Alert a= new Alert(AlertType.WARNING);
-            a.setContentText("Please select a Product");
+            a.setContentText("Choisissez une boisson à supprimer");
             a.setHeaderText(null);
             a.showAndWait();
         }
@@ -111,7 +111,7 @@ public class GestionBarBoisson implements Initializable {
         {
             Boisson singleProduct=tableview.getSelectionModel().getSelectedItem();
             Alert alert= new Alert(AlertType.CONFIRMATION);
-            alert.setContentText("Are you sure to delete? \n"+singleProduct.toString());
+            alert.setContentText("Voulez_vous vraiment supprimer cet article? \n"+singleProduct.toString());
             alert.setHeaderText(null);
             Optional<ButtonType> action = alert.showAndWait();
             if (action.get()==ButtonType.OK)
