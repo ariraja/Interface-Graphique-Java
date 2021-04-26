@@ -6,8 +6,9 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionBarController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right top, #f8ad22, #f8b223, #f7b725, #f7bc27, #f6c129);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionBarController">
 
     <children>
         <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-radius: 1em;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -24,10 +25,13 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <Label layoutX="241.0" layoutY="62.0" text="Gestion Bar" />
-      <Button fx:id="btnretour" layoutX="261.0" layoutY="302.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
-      <Button layoutX="261.0" layoutY="206.0" mnemonicParsing="false" onAction="#goToGestionBarCocktail" text="Gérer Cocktail" />
-      <Button fx:id="btnboisson" layoutX="253.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToGestionBarBoisson" text="Gérer Boissons" />
+        <Label layoutX="181.0" layoutY="50.0" prefHeight="92.0" prefWidth="238.0" text="Gestion Bar">
+         <font>
+            <Font name="Californian FB Bold" size="47.0" />
+         </font></Label>
+      <Button fx:id="btnretour" layoutX="274.0" layoutY="300.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
+      <Button layoutX="255.0" layoutY="233.0" mnemonicParsing="false" onAction="#goToGestionBarCocktail" text="Gérer Cocktail" />
+      <Button fx:id="btnboisson" layoutX="253.0" layoutY="174.0" mnemonicParsing="false" onAction="#goToGestionBarBoisson" text="Gérer Boissons" />
 
     </children>
 

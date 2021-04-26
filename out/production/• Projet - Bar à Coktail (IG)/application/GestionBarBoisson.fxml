@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionBarBoisson">
     <children>
@@ -24,9 +25,14 @@
         </TableView>
         <Button fx:id="btajouter" layoutX="120.0" layoutY="218.0" mnemonicParsing="false" onAction="#ajout" text="Ajouter" />
         <Button fx:id="btsupprimer" layoutX="195.0" layoutY="218.0" mnemonicParsing="false" onAction="#supression" text="Supprimer" />
-        <Button fx:id="btquitter" layoutX="23.0" layoutY="348.0" mnemonicParsing="false" onAction="#quitter" text="Retour" />
+        <Button fx:id="btnretour" layoutX="23.0" layoutY="348.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
         <Label fx:id="lberrornom" layoutX="133.0" layoutY="100.0" text="" textFill="RED" />
         <Label fx:id="lberrorprix" layoutX="133.0" layoutY="150.0" text="" textFill="RED" />
         <Label fx:id="lberrorquantite" layoutX="120.0" layoutY="209.0" text="" textFill="RED" />
+      <Label layoutX="16.0" layoutY="17.0" prefHeight="31.0" prefWidth="279.0" text="Gérer les boissons du stock">
+         <font>
+            <Font name="Californian FB Bold" size="23.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

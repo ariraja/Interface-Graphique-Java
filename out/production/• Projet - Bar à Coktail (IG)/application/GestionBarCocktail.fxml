@@ -6,11 +6,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionBarCocktail">
    <children>
-      <Label layoutX="216.0" layoutY="30.0" prefHeight="18.0" prefWidth="186.0" text="Composez votre nouveau cocktail" />
-      <TableView fx:id="tableview1" layoutX="24.0" layoutY="76.0" prefHeight="247.0" prefWidth="222.0">
+      <Label layoutX="142.0" layoutY="5.0" prefHeight="42.0" prefWidth="364.0" text="Composez votre nouveau cocktail">
+         <font>
+            <Font name="Californian FB Bold" size="25.0" />
+         </font></Label>
+      <TableView fx:id="tableview1" layoutX="76.0" layoutY="50.0" prefHeight="226.0" prefWidth="226.0">
         <columns>
           <TableColumn fx:id="colnom1" prefWidth="75.0" text="nom" />
           <TableColumn fx:id="colprix1" prefWidth="75.0" text="prix" />
@@ -23,11 +27,11 @@
           <TableColumn fx:id="colprix2" prefWidth="75.0" text="prix" />
         </columns>
       </TableView>
-      <Button fx:id="ajtBoisson" layoutX="24.0" layoutY="337.0" mnemonicParsing="false" onAction="#AjouteBoisson" text="Ajouter Boisson" />
-      <Button fx:id="retirerboisson" layoutX="135.0" layoutY="337.0" mnemonicParsing="false" onAction="#RetirerBoisson" text="Retirer Boisson" />
-      <TextField fx:id="tfnewcocktail" layoutX="426.0" layoutY="283.0" />
-      <Label layoutX="266.0" layoutY="278.0" prefHeight="35.0" prefWidth="150.0" text="Nom du nouveau cocktail" />
-      <Button fx:id="composercocktail" layoutX="352.0" layoutY="337.0" mnemonicParsing="false" onAction="#ComposerCocktail" text="Composer le cocktail" />
-      <Button fx:id="btnretour" layoutX="506.0" layoutY="337.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
+      <Button fx:id="ajtBoisson" layoutX="139.0" layoutY="282.0" mnemonicParsing="false" onAction="#AjouteBoisson" text="Ajouter Boisson" />
+      <Button fx:id="retirerboisson" layoutX="411.0" layoutY="269.0" mnemonicParsing="false" onAction="#RetirerBoisson" text="Retirer Boisson" />
+      <TextField fx:id="tfnewcocktail" layoutX="292.0" layoutY="345.0" />
+      <Label layoutX="142.0" layoutY="340.0" prefHeight="35.0" prefWidth="150.0" text="Nom du nouveau cocktail" />
+      <Button fx:id="composercocktail" layoutX="455.0" layoutY="345.0" mnemonicParsing="false" onAction="#ComposerCocktail" text="Composer le cocktail" />
+      <Button fx:id="btnretour" layoutX="19.0" layoutY="350.0" mnemonicParsing="false" onAction="#BtnRetour" text="Retour" />
    </children>
 </AnchorPane>

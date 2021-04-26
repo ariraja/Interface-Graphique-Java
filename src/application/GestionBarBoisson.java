@@ -1,5 +1,6 @@
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -10,7 +11,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -64,6 +69,11 @@ public class GestionBarBoisson implements Initializable {
     @FXML
     private Label lberrorquantite;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+
     ObservableList<Boisson> list= FXCollections.observableArrayList(new Boisson("Eau",1,20));
 
     @FXML
@@ -84,16 +94,16 @@ public class GestionBarBoisson implements Initializable {
             lberrorquantite.setText("");
             lberrorprix.setText("");
             lberrornom.setText("");
-
         }
-
     }
 
     @FXML
-    void quitter(ActionEvent event) {
-        Stage stage= (Stage)btquitter.getScene().getWindow();
-        stage.close();
-
+    void BtnRetour(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("GestionBar.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
